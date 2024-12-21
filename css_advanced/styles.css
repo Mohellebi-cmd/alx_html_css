@@ -200,20 +200,26 @@ footer {
 }
 
 .footer-content {
-    max-width: 1200px;
+  
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+justify-content: space-between;
     gap: 20px;
 }
 
 .social-icons {
-    display: flex;
+   display: flex;
     gap: 20px;
+
 }
 
 .social-icons i {
     font-size: 24px;
+}
+
+
+.paragraph {
+    text-align: center ;
 }
