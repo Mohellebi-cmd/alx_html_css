@@ -1,0 +1,125 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* what we do Section */
+.what-we-do {
+    padding: 80px 0;
+    text-align: center;
+    
+}
+
+.what-we-do h2 {
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+    width: 45%;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+.we-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.we-card {
+    text-align: center;
+}
+
+.we-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/* Existing styles remain the same until the media queries */
+
+/* Tablet Styles (768px and below) */
+@media screen and (max-width: 768px) {
+    /* Header and Navigation */
+    nav ul li a {
+        font-size: 13px;
+    
+       }
+    header {
+        padding: 20px 40px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    /* What we do Section */
+    .we-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 0 40px;
+    }
+
+    /* Results Section */
+    .result-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 0 40px;
+    }
+
+    .results h2,
+    main section:first-child h3,
+    .what-we-do h2 {
+        width: 80%;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 0 40px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 40px 20px;
+    }
+}
+
+/* Mobile Styles (520px and below) */
+@media screen and (max-width: 520px) {
+   nav ul li a {
+    font-size: 10px;
+   }
+
+   
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav img {
+        height: 25px;
+    }
+
+  
+  
+   
+}
