@@ -1,0 +1,106 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* contact us section */
+.contactus {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contactus h1 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #071629;
+    outline: none;
+    font-size: 14px;
+}
+
+.contact-button {
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+}
+
+.contact-button:hover {
+    opacity: 0.9;
+}
+
+
+
+
+/* Existing styles remain the same until the media queries */
+
+/* Tablet Styles (768px and below) */
+@media screen and (max-width: 768px) {
+
+
+    /* Contact Form */
+    .contact-form {
+        padding: 0 40px;
+    }
+
+
+/* Mobile Styles (520px and below) */
+@media screen and (max-width: 520px) {
+   nav ul li a {
+    font-size: 10px;
+   }
+
+   
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav img {
+        height: 25px;
+    }
+
+  
+  
+   
+}
