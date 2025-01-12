@@ -1,1 +1,96 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    position: absolute;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 100;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav ul li a:hover {
+    cursor: pointer;
+    color: #FF6565;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* Existing styles remain the same until the media queries */
+
+/* Tablet Styles (768px and below) */
+@media screen and (max-width: 768px) {
+    /* Header and Navigation */
+    nav ul li a {
+        font-size: 13px;
+    
+       }
+    header {
+        padding: 20px 40px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+
+
+
+/* Mobile Styles (520px and below) */
+@media screen and (max-width: 520px) {
+   nav ul li a {
+    font-size: 10px;
+   }
+
+   
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav img {
+        height: 25px;
+    }
+
+  
+  
+   
+}
