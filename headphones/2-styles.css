@@ -1,1 +1,138 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* results Section */
+
+.results {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url('/images/headphones_hero_2.jpg');
+background-size: cover;
+background-position: center;
+min-height: 100vh;
+color: white;
+text-align: center;
+padding-top: 300px;
+}
+
+.results h1 {
+    font-size: 30px;
+margin-top: -130px;
+margin-bottom: 30px;
+}
+
+.results h2{
+    font-size: 15px;
+    margin: auto;
+     text-align: center;
+     width: 45%;
+     margin-bottom: 80px;
+}
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.result-card {
+    text-align: center;
+}
+
+.result-card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.pentagon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.pentagon-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.pentagon-content h3 {
+    font-size: 38px;    
+    font-weight: bold;
+}
+
+.pentagon-content p {
+    font-size: 12px;
+}
+
+.result-card {
+    text-align: center;
+    position: relative;
+}
+
+.result-card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Existing styles remain the same until the media queries */
+
+/* Tablet Styles (768px and below) */
+@media screen and (max-width: 768px) {
+
+
+    /* Results Section */
+    .result-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 0 40px;
+    }
+
+    .results h2,
+    main section:first-child h3,
+    .what-we-do h2 {
+        width: 80%;
+    }
+
+
+
+/* Mobile Styles (520px and below) */
+@media screen and (max-width: 520px) {
+   nav ul li a {
+    font-size: 10px;
+   }
+
+   
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav img {
+        height: 25px;
+    }
+
+  
+  
+   
+}
