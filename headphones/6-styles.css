@@ -1,0 +1,443 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    position: absolute;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 100;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav ul li a:hover {
+    cursor: pointer;
+    color: #FF6565;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* call to action Section */
+main section:first-child {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+                url('/images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    padding-top: 300px;
+}
+
+main section:first-child h1 {
+    font-size: 30px;
+    margin-bottom: 1px;
+    margin-top: 20px;
+}
+
+main section:first-child h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+main section:first-child h3 {
+    font-size: 15px;
+   margin: auto;
+    text-align: center;
+    width: 45%;
+}
+
+button {
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-btn {
+    display: none;
+}
+
+/* what we do Section */
+.what-we-do {
+    padding: 80px 0;
+    text-align: center;
+    
+}
+
+.what-we-do h2 {
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+    width: 45%;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+.we-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.we-card {
+    text-align: center;
+}
+
+.we-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+/* results Section */
+
+.results {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url('/images/headphones_hero_2.jpg');
+background-size: cover;
+background-position: center;
+min-height: 100vh;
+color: white;
+text-align: center;
+padding-top: 300px;
+}
+
+.results h1 {
+    font-size: 30px;
+margin-top: -130px;
+margin-bottom: 30px;
+}
+
+.results h2{
+    font-size: 15px;
+    margin: auto;
+     text-align: center;
+     width: 45%;
+     margin-bottom: 80px;
+}
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.result-card {
+    text-align: center;
+}
+
+.result-card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.pentagon {
+    width: 150px;
+    height: 150px;
+    background-color: #FF6565;
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+/* Update existing pentagon container styles */
+.pentagon-container {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+/* Adjust the content positioning */
+.pentagon-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+.pentagon-content h3 {
+    font-size: 38px;    
+    font-weight: bold;
+}
+
+.pentagon-content p {
+    font-size: 12px;
+}
+
+.result-card {
+    text-align: center;
+    position: relative;
+}
+
+
+
+/* contact us section */
+.contactus {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contactus h1 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #071629;
+    outline: none;
+    font-size: 14px;
+}
+
+.contact-button {
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+}
+
+.contact-button:hover {
+    opacity: 0.9;
+}
+/* footer section */
+.footer {
+    background-color: #071629;
+    padding: 50px 100px 20px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.footer-left img {
+    height: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons svg {
+    stroke-width: 1.5;
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover svg {
+    transform: scale(1.1);
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.35;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+/* Existing styles remain the same until the media queries */
+
+/* Tablet Styles (768px and below) */
+@media screen and (max-width: 768px) {
+    /* Header and Navigation */
+    nav ul li a {
+        font-size: 13px;
+    
+       }
+    header {
+        padding: 20px 40px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    /* grid Section */
+    .we-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 0 40px;
+    }
+
+    /* Results Section */
+    .result-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 0 40px;
+    }
+
+    .results h2,
+    main section:first-child h3,
+    .what-we-do h2 {
+        width: 80%;
+    }
+    
+    /* Contact Form */
+    .contact-form {
+        padding: 0 40px;
+    }
+    /* Footer */
+    .footer {
+        padding: 40px 40px 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 520px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px 0;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #menu-btn {
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 2px;
+        background: white;
+        cursor: pointer;
+    }
+
+    #menu-btn::before, #menu-btn::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: white;
+        transition: all 0.3s ease;
+    }
+
+    #menu-btn::before {
+        top: -6px;
+    }
+
+    #menu-btn::after {
+        top: 6px;
+    }
+
+    /* Show menu when checkbox is checked */
+    #menu-toggle:checked ~ ul {
+        display: flex;
+    }
+
+    /* Animate hamburger to X when menu is open */
+    #menu-toggle:checked ~ #menu-btn {
+        background: transparent;
+    }
+
+    #menu-toggle:checked ~ #menu-btn::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    #menu-toggle:checked ~ #menu-btn::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+}
