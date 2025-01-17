@@ -55,9 +55,9 @@ This project consists of a single-page website built with HTML5 and CSS3, featur
 ### File Structure
 ```
 .
-├── index.html
-├── styles.css
-└── headerimages/
+├── (0--7)index.html
+├── (0--7)styles.css
+└── images/
     ├── logo_headphones.png
     ├── headphones_hero_1.jpg
     ├── headphones_hero_2.jpg
