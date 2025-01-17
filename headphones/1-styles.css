@@ -10,6 +10,97 @@ body {
     line-height: 1.6;
 }
 
+/* Header and Navigation */
+header {
+    position: absolute;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 100;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav ul li a:hover {
+    cursor: pointer;
+    color: #FF6565;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* call to action Section */
+main section:first-child {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+                url('/images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    padding-top: 300px;
+}
+
+main section:first-child h1 {
+    font-size: 30px;
+    margin-bottom: 1px;
+    margin-top: 20px;
+}
+
+main section:first-child h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+main section:first-child h3 {
+    font-size: 15px;
+   margin: auto;
+    text-align: center;
+    width: 45%;
+}
+
+button {
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-btn {
+    display: none;
+}
 
 /* what we do Section */
 .what-we-do {
@@ -46,13 +137,6 @@ body {
     margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
 /* Existing styles remain the same until the media queries */
 
 /* Tablet Styles (768px and below) */
@@ -69,57 +153,75 @@ body {
     nav ul {
         gap: 20px;
     }
-
-    /* What we do Section */
     .we-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         padding: 0 40px;
     }
 
-    /* Results Section */
-    .result-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        padding: 0 40px;
-    }
-
-    .results h2,
-    main section:first-child h3,
-    .what-we-do h2 {
-        width: 80%;
-    }
-
-    /* Contact Form */
-    .contact-form {
-        padding: 0 40px;
-    }
-
-    /* Footer */
-    .footer {
-        padding: 40px 40px 20px;
-    }
 }
 
-/* Mobile Styles (520px and below) */
+
 @media screen and (max-width: 520px) {
-   nav ul li a {
-    font-size: 10px;
-   }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px 0;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
 
-   
+    #menu-btn {
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 2px;
+        background: white;
+        cursor: pointer;
+    }
 
-    nav {
+    #menu-btn::before, #menu-btn::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: white;
+        transition: all 0.3s ease;
+    }
+
+    #menu-btn::before {
+        top: -6px;
+    }
+
+    #menu-btn::after {
+        top: 6px;
+    }
+
+    /* Show menu when checkbox is checked */
+    #menu-toggle:checked ~ ul {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
-    nav img {
-        height: 25px;
+    /* Animate hamburger to X when menu is open */
+    #menu-toggle:checked ~ #menu-btn {
+        background: transparent;
     }
 
-  
-  
-   
+    #menu-toggle:checked ~ #menu-btn::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    #menu-toggle:checked ~ #menu-btn::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
 }
